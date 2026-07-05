@@ -13,7 +13,8 @@ app.use(cors());
 app.use(express.json());
 
 // DB Config
-const db = process.env.MONGODB_URI || 'mongodb://localhost:27017/trello-clone';
+// const db = process.env.MONGODB_URI || 'mongodb://localhost:27017/trello-clone';
+const db = process.env.MONGODB_URI;
 
 // Connect to MongoDB
 mongoose
