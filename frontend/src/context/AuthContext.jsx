@@ -8,7 +8,8 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   // Define API base url
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001/api';
+  // const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001/api';
+  const API_URL =import.meta.env.VITE_API_URL || "https://taskflow-uxol.onrender.com/api";
 
   useEffect(() => {
     const loadUser = async () => {
